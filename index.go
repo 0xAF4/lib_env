@@ -13,7 +13,7 @@ type Config struct {
 
 	Http struct {
 		Port  string `env:"HTTP_PORT"`
-		Group string `env:"HTTP_PORT"`
+		Group string `env:"HTTP_GROUP"`
 	}
 
 	Jwt struct {

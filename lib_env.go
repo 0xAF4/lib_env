@@ -29,9 +29,9 @@ type Config struct {
 	}
 
 	Telegram struct {
-		Token  string `env:"TELEGRAM_TOKEN"`
-		ChatID string `env:"TELEGRAM_CHAT_ID"`
-		Users  string `env:"TELEGRAM_USERS"`
+		Token  string   `env:"TELEGRAM_TOKEN"`
+		ChatID []string `env:"TELEGRAM_CHAT_ID" envSeparator:":"`
+		Users  []string `env:"TELEGRAM_USERS" envSeparator:":"`
 	}
 
 	Mail struct {

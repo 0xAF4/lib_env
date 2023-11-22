@@ -23,9 +23,10 @@ type Config struct {
 	}
 
 	Jwt struct {
-		Key       string `env:"JWT_KEY"`
-		Algorithm string `env:"JWT_ALGORITHM"`
-		LiveTime  string `env:"JWT_LIVE_TIME"`
+		Key         string        `env:"JWT_KEY"`
+		Method      string        `env:"JWT_METHOD"`
+		AccessTime  time.Duration `env:"JWT_ACCESS_TIME"`
+		RefreshTime time.Duration `env:"JWT_REFRESH_TIME"`
 	}
 
 	Telegram struct {

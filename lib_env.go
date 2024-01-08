@@ -17,6 +17,11 @@ type Config struct {
 		Version string `env:"APP_VERSION"`
 	}
 
+	Auth struct {
+		Login    string `env:"AUTH_LOGIN"`
+		Password string `env:"AUTH_PASSWORD"`
+	}
+
 	Http struct {
 		Port  string `env:"HTTP_PORT" envDefault:":985"`
 		Group string `env:"HTTP_GROUP"`
